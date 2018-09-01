@@ -1,6 +1,6 @@
 ## <span style="color:orange"> Deep Learning </span>
 
-### <span style="color:blue"> How Machine Learning Works </span>
+### <span style="color:blue"> How Deep Learning Works </span>
 Most deep learning methods use neural network architectures, which is why deep learning models are often referred to as deep neural networks.
 
 The term “deep” usually refers to the number of hidden layers in the neural network. Traditional neural networks only contain 2-3 hidden layers, while deep networks can have as many as 150.
