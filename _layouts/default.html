@@ -37,6 +37,13 @@
         </section>
 
         <aside id="sidebar">
+          {% if site.github.is_project_page %}
+          <a href="{{ site.github.ml_url }}" class="button"><small>Follow me on</small> Machine Ln</a>
+          {% endif %}
+          {% if site.github.is_project_page %}
+          <a href="{{ site.github.dl_url }}" class="button"><small>Follow me on</small> Deep Learning</a>
+          {% endif %}
+          
           {% if site.show_downloads %}
             <a href="{{ site.github.zip_url }}" class="button">
               <small>Download</small>
