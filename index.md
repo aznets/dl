@@ -1,69 +1,60 @@
-## Welcome to My Homepage
-<br> <img src="https://www.mdanderson.org/content/mda/en/research/departments-labs-institutes/labs/court-laboratory/lab-members/jcr:content/mainparsys/columns/column1/textimage_924724179.resize.jpg/1522770082405.jpg" alt="alt text" title="Title"  height="160" width="160" />
-### Joonsang Lee, Ph.D. 
-<button name="button"><a href="https://aznets.github.io/jslee/"> CV </a> <br>
-
-I am a research engineer in the Department of Radiation Physics at the M.D. Anderson Cancer Center.
-I received his Ph.D. in the Physics and Astronomy department at the University of Georgia. My Ph.D. research focused primarily on development of a pharmacokinetic modeling in dynamic contrast-enhanced magnetic resonance imaging (DCE-MRI) and the development of image-processing algorithms for tumor segmentation. My research as a postdoctoral follow in Bioinformatics & Computational Biology at the MD Anderson Cancer Center has focused primarily on image processing on brain tumor images with various statistical techniques and machine learning. During this postdoctoral training, my projects ranged from texture analysis for the parametric map of DSC-MRI to the analysis of tumor heterogeneity in multiparametric MRI data.
-
-My current research is on decoding tumor phenotype with Radiomics approach such as the extraction and analysis of advanced quantitative imaging features obtained from CT, PET or MRI. I am currently funded by the Center for Radiation Oncology (CROR) to provide radiomics research support to researchers throughout the institution.
-
-**M.D. Anderson Cancer Center** <br>
-_Department of Radiation Physics_ <br>
-<button name="button"><a href="https://www.mdanderson.org/research/departments-labs-institutes/labs/court-laboratory/lab-members.html"> Court Lab </a>
-
----
-<br>
-## Research Interest - ML & DL
-### Machine Learning
-<br><center> <img src="https://www.uruit.com/blog/wp-content/uploads/2018/02/Diagram-1-1024x435.png" alt="alt text" title="Title" /> </center>
+## Deep Learning
 
 <br>
 ### How Machine Learning Works
-Machine learning uses two types of techniques: supervised learning, which trains a model on known input and output data so that it can predict future outputs, and unsupervised learning, which finds hidden patterns or intrinsic structures in input data.
+Most deep learning methods use neural network architectures, which is why deep learning models are often referred to as deep neural networks.
 
-<br><center><img src="https://www.mathworks.com/content/mathworks/www/en/discovery/machine-learning/jcr:content/mainParsys3/discoverysubsection_1965078453/mainParsys3/image_2128876021_cop.adapt.full.high.svg/1531721829647.svg" alt="alt text" title="Title" /> </center> <br>
+The term “deep” usually refers to the number of hidden layers in the neural network. Traditional neural networks only contain 2-3 hidden layers, while deep networks can have as many as 150.
 
-<center> Figure 1. Machine learning techniques include both unsupervised and supervised learning.</center><br>
+Deep learning models are trained by using large sets of labeled data and neural network architectures that learn features directly from the data without the need for manual feature extraction.
+
+<br><center><img src="https://www.mathworks.com/content/mathworks/www/en/discovery/deep-learning/jcr:content/mainParsys/band_2123350969_copy_1983242569/mainParsys/columns_1635259577/1/image_2128876021_cop_1731669336.adapt.full.high.svg/1534959893935.svg" alt="alt text" title="Title" /> </center> <br>
+
+<center> Figure 1: Neural networks, which are organized in layers consisting of a set of interconnected nodes. Networks can have tens or hundreds of hidden layers.</center><br>
 <br>
-### <span style="color:orange"> Supervised Learning  </span>
-Supervised machine learning builds a model that makes predictions based on evidence in the presence of uncertainty. A supervised learning algorithm takes a known set of input data and known responses to the data (output) and trains a model to generate reasonable predictions for the response to new data. Use supervised learning if you have known data for the output you are trying to predict.
 
-Supervised learning uses classification and regression techniques to develop predictive models.
+One of the most popular types of deep neural networks is known as convolutional neural networks (CNN or ConvNet). A CNN convolves learned features with input data, and uses 2D convolutional layers, making this architecture well suited to processing 2D data, such as images.
 
-**Classification techniques** predict discrete responses—for example, whether an email is genuine or spam, or whether a tumor is cancerous or benign. Classification models classify input data into categories. Typical applications include medical imaging, speech recognition, and credit scoring.
+CNNs eliminate the need for manual feature extraction, so you do not need to identify features used to classify images. The CNN works by extracting features directly from images. The relevant features are not pretrained; they are learned while the network trains on a collection of images. This automated feature extraction makes deep learning models highly accurate for computer vision tasks such as object classification.
 
-Use classification if your data can be tagged, categorized, or separated into specific groups or classes. For example, applications for hand-writing recognition use classification to recognize letters and numbers. In image processing and computer vision, unsupervised pattern recognition techniques are used for object detection and image segmentation.
+<br><center><img src="https://www.mathworks.com/content/mathworks/www/en/discovery/deep-learning/jcr:content/mainParsys/band_2123350969_copy_1983242569/mainParsys/columns_1635259577/1/image_2128876021_cop.adapt.full.high.svg/1534959893958.svg" alt="alt text" title="Title" /> </center> <br>
 
-Common algorithms for performing classification include support vector machine (SVM), boosted and bagged decision trees, k-nearest neighbor, Naïve Bayes, discriminant analysis, logistic regression, and neural networks.
+<center>Figure 2: Example of a network with many convolutional layers. Filters are applied to each training image at different resolutions, and the output of each convolved image serves as the input to the next layer.</center><br>
 
-**Regression techniques** predict continuous responses—for example, changes in temperature or fluctuations in power demand. Typical applications include electricity load forecasting and algorithmic trading.
+<br>
+CNNs learn to detect different features of an image using tens or hundreds of hidden layers. Every hidden layer increases the complexity of the learned image features. For example, the first hidden layer could learn how to detect edges, and the last learns how to detect more complex shapes specifically catered to the shape of the object we are trying to recognize.
 
-Use regression techniques if you are working with a data range or if the nature of your response is a real number, such as temperature or the time until failure for a piece of equipment.
+### <span style="color:blue"> What's the Difference Between Machine Learning and Deep Learning? </span>
+Deep learning is a specialized form of machine learning. A machine learning workflow starts with relevant features being manually extracted from images. The features are then used to create a model that categorizes the objects in the image. With a deep learning workflow, relevant features are automatically extracted from images. In addition, deep learning performs “end-to-end learning” – where a network is given raw data and a task to perform, such as classification, and it learns how to do this automatically.
 
-Common regression algorithms include linear model, nonlinear model, regularization, stepwise regression, boosted and bagged decision trees, neural networks, and adaptive neuro-fuzzy learning.
+Another key difference is deep learning algorithms scale with data, whereas shallow learning converges. Shallow learning refers to machine learning methods that plateau at a certain level of performance when you add more examples and training data to the network.
 
+A key advantage of deep learning networks is that they often continue to improve as the size of your data increases.
 
-### <span style="color:orange"> Unsupervised Learning  </span>
-Unsupervised learning finds hidden patterns or intrinsic structures in data. It is used to draw inferences from datasets consisting of input data without labeled responses.
+<br><center><img src="https://www.mathworks.com/content/mathworks/www/en/discovery/deep-learning/jcr:content/mainParsys/band_2123350969_copy_1983242569/mainParsys/columns_1635259577/1/image_792810770_copy.adapt.full.high.svg/1534959893981.svg" alt="alt text" title="Title" /> </center> <br>
 
-**Clustering** is the most common unsupervised learning technique. It is used for exploratory data analysis to find hidden patterns or groupings in data. Applications for cluster analysis include gene sequence analysis, market research, and object recognition.
+<center>Figure 3. Comparing a machine learning approach to categorizing vehicles (left) with deep learning (right).</center><br>
+<br>
+In machine learning, you manually choose features and a classifier to sort images. With deep learning, feature extraction and modeling steps are automatic.
 
-For example, if a cell phone company wants optimize the locations where they build cell phone towers, they can use machine learning to estimate the number of clusters of people relying on their towers. A phone can only talk to one tower at a time, so the team uses clustering algorithms to design the best placement of cell towers to optimize signal reception for groups, or clusters, of their customers.
+### <span style="color:blue"> Choosing Between Machine Learning and Deep Learning </span>
+Machine learning offers a variety of techniques and models you can choose based on your application, the size of data you're processing, and the type of problem you want to solve. A successful deep learning application requires a very large amount of data (thousands of images) to train the model, as well as GPUs, or graphics processing units, to rapidly process your data.
 
-Common algorithms for performing clustering include k-means and k-medoids, hierarchical clustering, Gaussian mixture models, hidden Markov models, self-organizing maps, fuzzy c-means clustering, and subtractive clustering.
+When choosing between machine learning and deep learning, consider whether you have a high-performance GPU and lots of labeled data. If you don’t have either of those things, it may make more sense to use machine learning instead of deep learning. Deep learning is generally more complex, so you’ll need at least a few thousand images to get reliable results. Having a high-performance GPU means the model will take less time to analyze all those images.
 
-<br><center><img src="https://www.mathworks.com/content/mathworks/www/en/discovery/machine-learning/jcr:content/mainParsys3/discoverysubsection_1965078453/mainParsys3/image_792810770_copy.adapt.full.high.svg/1531721829837.svg" alt="alt text" title="Title" /> </center><br>
-<center> Figure 2. Clustering finds hidden patterns in your data.</center><br>
+### <span style="color:blue"> How to Create and Train Deep Learning Models </span>
+The three most common ways people use deep learning to perform object classification are:
 
-How Do You Decide Which Machine Learning Algorithm to Use?
-Choosing the right algorithm can seem overwhelming—there are dozens of supervised and unsupervised machine learning algorithms, and each takes a different approach to learning.
+#### <span style="color:orange"> Training from Scratch </span>
 
-There is no best method or one size fits all. Finding the right algorithm is partly just trial and error—even highly experienced data scientists can’t tell whether an algorithm will work without trying it out. But algorithm selection also depends on the size and type of data you’re working with, the insights you want to get from the data, and how those insights will be used.
+To train a deep network from scratch, you gather a very large labeled data set and design a network architecture that will learn the features and model. This is good for new applications, or applications that will have a large number of output categories. This is a less common approach because with the large amount of data and rate of learning, these networks typically take days or weeks to train.
 
-<br><center><img src="https://www.mathworks.com/content/mathworks/www/en/discovery/machine-learning/jcr:content/mainParsys3/discoverysubsection_1965078453/mainParsys3/image_2109075398_cop.adapt.full.high.svg/1531721829860.svg" alt="alt text" title="Title" /> </center><br>
-<center> Figure 3. Machine learning techniques. </center><br>
-Here are some guidelines on choosing between supervised and unsupervised machine learning:
+#### <span style="color:orange">Transfer Learning </span>
 
-Choose supervised learning if you need to train a model to make a prediction--for example, the future value of a continuous variable, such as temperature or a stock price, or a classification—for example, identify makes of cars from webcam video footage.
-Choose unsupervised learning if you need to explore your data and want to train a model to find a good internal representation, such as splitting data up into clusters.
+Most deep learning applications use the transfer learning approach, a process that involves fine-tuning a pretrained model. You start with an existing network, such as AlexNet or GoogLeNet, and feed in new data containing previously unknown classes. After making some tweaks to the network, you can now perform a new task, such as categorizing only dogs or cats instead of 1000 different objects. This also has the advantage of needing much less data (processing thousands of images, rather than millions), so computation time drops to minutes or hours.
+
+Transfer learning requires an interface to the internals of the pre-existing network, so it can be surgically modified and enhanced for the new task. MATLAB® has tools and functions designed to help you do transfer learning.
+
+#### <span style="color:orange"> Feature Extraction </span>
+
+A slightly less common, more specialized approach to deep learning is to use the network as a feature extractor. Since all the layers are tasked with learning certain features from images, we can pull these features out of the network at any time during the training process. These features can then be used as input to a machine learning model such as support vector machines (SVM).
